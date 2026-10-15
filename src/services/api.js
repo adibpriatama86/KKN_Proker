@@ -11,6 +11,10 @@ const API_URL = import.meta.env.VITE_API_URL || '';
  * @returns {{ syarat_surat: Array, info_kelurahan: Array }}
  */
 export async function fetchKelurahanData() {
+  if (!API_URL) {
+    throw new Error('VITE_API_URL is not configured.');
+  }
+
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 12000);
 
@@ -19,16 +23,37 @@ export async function fetchKelurahanData() {
       signal: controller.signal,
       mode: 'cors',
     });
-    clearTimeout(timeoutId);
-
     if (!response.ok) {
-      throw new Error(`HTTP Error: ${response.status} – ${response.statusText}`);
+      throw new Error(`Service endpoint returned HTTP ${response.status}.`);
     }
 
-    const data = await response.json();
+    let data;
+    try {
+      data = await response.json();
+    } catch {
+      throw new Error('Service endpoint did not return valid JSON.');
+    }
 
-    if (!data.syarat_surat || !data.info_kelurahan) {
-      throw new Error('Format data dari server tidak valid.');
+    if (
+      !data ||
+      !Array.isArray(data.syarat_surat) ||
+      !Array.isArray(data.info_kelurahan)
+    ) {
+      throw new Error('Service endpoint returned an invalid data structure.');
+    }
+
+    const validServices = data.syarat_surat.every((item) =>
+      item &&
+      typeof item.kategori === 'string' &&
+      typeof item.nama_surat === 'string' &&
+      typeof item.persyaratan === 'string'
+    );
+    const validInfo = data.info_kelurahan.every((item) =>
+      item && typeof item.key === 'string' && typeof item.value === 'string'
+    );
+
+    if (!validServices || !validInfo) {
+      throw new Error('Service endpoint returned rows with invalid fields.');
     }
 
     return {
@@ -36,11 +61,12 @@ export async function fetchKelurahanData() {
       info_kelurahan: data.info_kelurahan ?? [],
     };
   } catch (error) {
-    clearTimeout(timeoutId);
     if (error.name === 'AbortError') {
       throw new Error('Permintaan data timeout. Periksa koneksi internet Anda.');
     }
     throw error;
+  } finally {
+    clearTimeout(timeoutId);
   }
 }
 

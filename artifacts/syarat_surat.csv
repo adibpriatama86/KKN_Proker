@@ -1,0 +1,113 @@
+kategori,nama_surat,persyaratan
+Kependudukan,KARTU TANDA PENDUDUK ELEKTRONIK (E-KTP) BARU,"1. Fotokopi Kartu Keluarga (KK);
+2. Fotokopi Akta Lahir (Bagi Pemula);
+3. Kartu Tanda Penduduk Non Elektronik Asli (bagi yang sudah memiliki);
+4. Berkas dimasukan kedalam MAP KUNING"
+Kependudukan,PENGGANTIAN E-KTP KARENA RUSAK / HILANG,"1. Fotokopi Kartu Keluarga (KK);
+2. Kartu Tanda Penduduk Elektronik (E-KTP) Asli yang RUSAK; atau
+3. Surat Keterangan Kehilangan E-KTP dari Polisi (bagi E-KTP yang HILANG);
+4. Berkas dimasukan kedalam MAP KUNING"
+Kependudukan,KARTU KELUARGA (KK) BARU (RENTAN),"1. Surat Pengantar Desa/Kelurahan diketahui Camat;
+2. Formulir Isian Kartu Keluarga (F.1-01);
+3. Kartu Keluarga (KK) lama Asli;
+4. Fotokopi Surat Lahir dari Desa/Kelurahan (F.2-01)/Akta Lahir;
+5. Fotokopi Ijazah Terakhir;
+6. Fotokopi Surat Nikah/Akta Kawin (bagi yang sudah menikah);
+7. Fotokopi Akta Cerai (bagi yang pernah menikah);
+8. Fotokopi Surat kematian (F.2-29) /Akta Kematian;
+9. Surat Pernyataan Pengaktifan data atau belum pernah terdaftar didaerah manapun;
+10. Surat Pernyataan Tidak Memiliki Dokumen Kependudukan."
+Kependudukan,"PENERBITAN KARTU KELUARGA (KK) KARENA RUSAK/HILANG","1. Surat Pengantar Desa/Kelurahan diketahui Camat;
+2. Formulir Isian Kartu Keluarga (F.1-01);
+3. Kartu Keluarga (KK) lama Asli yang Rusak;
+4. Surat Kehilangan Kartu Keluarga (KK) dari Desa/Kelurahan;
+5. Fotokopi Surat Lahir dari Desa/Kelurahan (F.2-01)/Akta Lahir;
+6. Fotokopi Ijazah Terakhir;
+7. Fotokopi Surat Nikah/Akta Kawin (bagi yang sudah menikah);
+8. Fotokopi Akta Cerai (bagi yang pernah menikah);
+9. Fotokopi Surat kematian (F.2-29)/Akta Kematian"
+Kependudukan,PENGURANGAN ANGGOTA KARTU KELUARGA (KK) KARENA MENINGGAL DUNIA,"1. Surat Pengantar Desa/Kelurahan diketahui Camat;
+2. Formulir Isian Kartu Keluarga (F.1-01);
+3. Formulir Pernyataan Perubahan Data (F.1-05);
+4. Kartu Keluarga (KK) lama Asli;
+5. Fotokopi Surat Nikah/Akta Kawin ybs;
+6. Fotokopi Akta Cerai ybs;
+7. Fotokopi Surat kematian (F.2-29) /Akta Kematian"
+Kependudukan,PERUBAHAN STATUS PERKAWINAN PADA KARTU KELUARGA (KK),"1. Surat Pengantar Desa/Kelurahan diketahui Camat;
+2. Formulir Isian Kartu Keluarga (F.1-01);
+3. Formulir Pernyataan Perubahan Data (F.1-05);
+4. Kartu Keluarga (KK) lama Asli;
+5. Fotokopi Surat Nikah/Akta Kawin (bagi yang sudah menikah);
+6. Fotokopi Akta Cerai (bagi yang pernah menikah);
+7. Fotokopi Surat kematian (F.2-29) /Akta Kematian;"
+Kependudukan,AKTA KELAHIRAN,"1. Surat Keterangan Kelahiran dari Desa/Kelurahan (F2,01), Bidan/Penolong kelahiran/Dokter/Rumah Sakit;
+2. Fotokopi Surat Nikah / Kutipan akta perkawinan orang tua yang telah di legalisir;
+3. Fotokopi E-KTP Orang tua/wali/pelapor;
+4. Fotokopi Kartu Keluarga (KK) di mana penduduk didaftarkan sebagai anggota keluarga;
+5. Fotokopi E-KTP 2 Orang saksi;
+6. Fotokopi surat Cerai (apabila orang tua bercerai di legalisir;
+7. Fotokopi ijazah (bagi yang memiliki);
+[?] Surat Kematian orang tua (jika orang tua telah meninggal)."
+Kependudukan,AKTA KEMATIAN,"1. Surat pengantar dari Kades/Lurah di ketahui camat;
+2. Surat keterangan kematian dari pihak yang berwenang (Kepala Rumah Sakit, Dokter/Paramedis,Kepala Desa/Lurah /F2.29, atau Kepolisian);
+3. Surat nikah dari almarhum/almarhumah/surat persaksian dari desa/Kelurahan di ketahui Camat;
+4. Fotokopi E-KTP pelapor (asli di bawa);
+5. Fotokopi KK Ybs;
+6. Fotokopi E-KTP 2(dua) orang saksi;
+7. Apabila terjadi ketidakjelasan keberadaan seseorang karena hilang atau Mati tidak ditemukan jenazahnya, pencatatan oleh pejabat pencatatan sipil, Dilakukan setelah adanya penetapan pengadilan negeri;
+8. Dalam hal terjadi kematian seseorang yang tidak jelas identitasnya, Dispendukcapil melakukan pencatatan kematian berdasarkan keterangan dari Kepolisian."
+Kependudukan,AKTA PERCERAIAN,"1. Surat Pengantar dari Kades/Lurah diketahui Camat;
+2. Fotokopi E-KTP yang bersangkutan
+3. Fotokopi KK yang bersangkutan
+4. Akta Perkawinan Asli
+5. Surat Keterangan Panitera Pengadilan Negeri
+6. Fotokopi putusan Pengadilan Negeri
+7. Fotokopi E-KTP pelapor
+8. Bagi WNI yang sudah ganti nama membawa surat bukti ganti nama
+9. Bagi penduduk WNA/Orang asing membawa Dokumen imigrasi dan surat tanda lapor diri"
+Kependudukan,PINDAH DATANG DALAM SATU DESA/KELURAHAN,"1. Surat Pengantar Desa/Kelurahan diketahui Camat;
+2. Formulir Isian Kartu Keluarga (F.1-01);
+3. Formulir pernyataan (F.1-05) bila ada perubahan
+4. Formulir Pindah (F.1-23)
+5. Kartu Keluarga (KK) Asli ybs dan KK yang akan ditumpangi (jika numpang)
+6. Fotokopi Akta Kelahiran/Surat Lahir dari Desa/Kelurahan (F.2-01);
+7. Fotokopi Ijazah Terakhir;
+8. Fotokopi Surat Nikah/Akta Kawin/Akta Cerai;
+9. Fotokopi Surat kematian (F.2-29) /Akta Kematian;
+10. Berkas dimasukan kedalam MAP KUNING"
+Sosial,SURAT KETERANGAN TIDAK MAMPU (SKTM) SEKOLAH,"1. Surat Pengantar RT setempat;
+2. Fotokopi E-KTP pemohon;
+3. Fotokopi KK (Kartu Keluarga) pemohon."
+Sosial,SURAT KETERANGAN TIDAK MAMPU (SKTM) KESEHATAN,"1. Surat Pengantar RT setempat;
+2. Fotokopi E-KTP pemohon;
+3. Fotokopi KK (Kartu Keluarga);
+4. Foto Rumah pemohon tampak: Depan, Dalam dan Samping dengan lantai kelihatan;
+5. Materai 6000."
+Kependudukan,PERMOHONAN NIKAH (CALON ISTRI),"1. Surat Boro Nikah dari Pihak Laki-laki;
+2. Surat Pengantar dari RT setempat;
+3. Fotokopi E-KTP Pemohon & Fotokopi E-KTP Orangtua;
+4. Fotokopi Kartu Keluarga (KK);
+5. Fotokopi Akte Kelahiran;
+6. Fotokopi Ijazah Terakhir;
+7. Foto ukuran 2x3 sebanyak 7 lembar;
+8. Foto ukuran 3x4 sebanyak 2 lembar;
+9. Foto ukuran 4x6 sebanyak 2 lembar."
+Kependudukan,BORO NIKAH,"1. Surat Pengantar dari RT setempat;
+2. Fotokopi E-KTP Pemohon & Fotokopi E-KTP Orangtua;
+3. Fotokopi Kartu Keluarga (KK);
+4. Fotokopi Akte Kelahiran;
+5. Fotokopi Ijazah Terakhir;
+6. Fotokopi E-KTP dan KK (Kartu Keluarga) Calon Istri;
+7. Foto ukuran 2x3 sebanyak 7 lembar;
+8. Foto ukuran 3x4 sebanyak 2 lembar;
+9. Foto ukuran 4x6 sebanyak 2 lembar."
+Kependudukan,SURAT KETERANGAN WARIS,"1. Fotokopi E-KTP Ahli Waris;
+2. Fotokopi Kartu Keluarga Ahli Waris;
+3. Surat Kematian."
+Kependudukan,MEMBUAT SKCK BARU,"1. Surat Pengantar dari Kantor Kelurahan/Balaidesa pemohon;
+2. Fotokopi E-KTP/SIM pemohon;
+3. Fotokopi Kartu Keluarga;
+4. Fotokopi Akta Kelahiran/Kenal Lahir;
+5. Pas Foto terbaru dan berwarna ukuran 4x6 sebanyak 6 lembar;
+6. Formulir Daftar Riwayat Hidup yang telah disediakan di kantor Polisi;
+7. Pengambilan Sidik Jari oleh petugas."

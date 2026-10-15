@@ -1,0 +1,17 @@
+row,kategori,nama_surat,source_image,source_location,review_note
+2,Kependudukan,KARTU TANDA PENDUDUK ELEKTRONIK (E-KTP) BARU,IMG_4454.JPEG,upper main card,Complete readable card
+3,Kependudukan,PENGGANTIAN E-KTP KARENA RUSAK / HILANG,IMG_4454.JPEG,second main card,Complete readable card
+4,Kependudukan,KARTU KELUARGA (KK) BARU (RENTAN),IMG_4454.JPEG,third main card,Complete readable card
+5,Kependudukan,PENERBITAN KARTU KELUARGA (KK) KARENA RUSAK/HILANG,IMG_4454.JPEG,fourth main card,Complete readable card
+6,Kependudukan,PENGURANGAN ANGGOTA KARTU KELUARGA (KK) KARENA MENINGGAL DUNIA,IMG_4455.JPEG,upper center card,Complete readable card
+7,Kependudukan,PERUBAHAN STATUS PERKAWINAN PADA KARTU KELUARGA (KK),IMG_4455.JPEG,second center card,Complete readable card
+8,Kependudukan,AKTA KELAHIRAN,IMG_4455.JPEG,third center card,Final parent-death requirement appears unnumbered; flagged in review report
+9,Kependudukan,AKTA KEMATIAN,IMG_4455.JPEG,lower center card,Complete readable card
+10,Kependudukan,AKTA PERCERAIAN,IMG_4456.JPEG,upper left card,Complete readable card
+11,Kependudukan,PINDAH DATANG DALAM SATU DESA/KELURAHAN,IMG_4456.JPEG,second left card,Complete readable card
+12,Sosial,SURAT KETERANGAN TIDAK MAMPU (SKTM) SEKOLAH,IMG_4457.JPEG,upper card,Complete readable card
+13,Sosial,SURAT KETERANGAN TIDAK MAMPU (SKTM) KESEHATAN,IMG_4457.JPEG,second card,Complete readable card
+14,Kependudukan,PERMOHONAN NIKAH (CALON ISTRI),IMG_4457.JPEG,third card,Complete readable card
+15,Kependudukan,BORO NIKAH,IMG_4457.JPEG,fourth card,Complete readable card
+16,Kependudukan,SURAT KETERANGAN WARIS,IMG_4457.JPEG,fifth card,Complete readable card
+17,Kependudukan,MEMBUAT SKCK BARU,IMG_4457.JPEG,sixth card,Complete readable card

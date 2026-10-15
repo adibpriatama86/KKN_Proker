@@ -4,10 +4,9 @@
 import { useState, useEffect } from 'react';
 import { fetchKelurahanData, mapInfoKelurahan, MOCK_DATA } from '../services/api';
 
-// Use mock when VITE_USE_MOCK=true OR when no API URL is configured
-const USE_MOCK =
-  import.meta.env.VITE_USE_MOCK === 'true' ||
-  !import.meta.env.VITE_API_URL;
+// Mock data is for explicit development preview only. A missing endpoint must
+// surface as a configuration error instead of looking like live service data.
+const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true';
 
 export function useKelurahanData() {
   const [syaratSurat, setSyaratSurat]     = useState([]);
@@ -39,7 +38,10 @@ export function useKelurahanData() {
         }
       } catch (err) {
         if (!cancelled) {
-          setError(err.message || 'Gagal memuat data. Silakan coba lagi.');
+          if (import.meta.env.DEV) {
+            console.error('Failed to load Kelurahan data:', err);
+          }
+          setError('Data layanan tidak dapat dimuat saat ini. Silakan coba lagi nanti.');
         }
       } finally {
         if (!cancelled) setLoading(false);
