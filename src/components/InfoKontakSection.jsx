@@ -6,10 +6,10 @@ const STATIC = {
   email:     'kelketapang1@gmail.com',
   telepon:   '(0294) 381XXX',
   jam_kerja: 'Senin – Kamis: 07.30 – 15.30 WIB\nJumat: 07.30 – 11.00 WIB\nSabtu & Minggu: Tutup',
-  // Explicit coordinate-based embed — never falls back to text "Ketapang" search
+  // Pin the confirmed office coordinates in both the embed and navigation link.
   maps_embed:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3!2d110.21389789208276!3d-6.938749039229245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa98e62e63bff%3A0x1fe654e9f5b9cef3!2sKelurahan+Ketapang!5e0!3m2!1sid!2sid!4v1719460000000',
-  maps_link: 'https://maps.google.com/?q=-6.938749039229245,110.21389789208276',
+    'https://www.google.com/maps?q=-6.938380231426174,110.21399258020509&output=embed',
+  maps_link: 'https://www.google.com/maps?q=-6.938380231426174,110.21399258020509',
 };
 
 /* ── Skeleton line helper ─────────────────────────────────── */
@@ -42,16 +42,14 @@ export default function InfoKontakSection({ infoKelurahan, loading }) {
   /* ── Derive display values ────────────────────────────────
      alamat & email are statically anchored (no hook dependency).
      telepon & jam_kerja prefer live hook data, fall back to STATIC.
-     maps_embed_url is ONLY sourced from hook data while loading;
-     falls back to the coordinate-pinned STATIC embed (never text search). */
+     The office map uses the confirmed coordinate pin below. */
   const alamat    = STATIC.alamat;
   const email     = STATIC.email;
   const telepon   = infoKelurahan?.telepon   || STATIC.telepon;
   const jamKerja  = infoKelurahan?.jam_kerja || STATIC.jam_kerja;
 
-  // Strict: only use maps_embed_url from the hook once loaded.
-  // While loading, render nothing (pulse placeholder shown instead).
-  const mapsEmbed = infoKelurahan?.maps_embed_url || STATIC.maps_embed;
+  // Do not let a stale maps_embed_url from Sheets override the confirmed pin.
+  const mapsEmbed = STATIC.maps_embed;
   const mapsReady = !loading && !!mapsEmbed;
 
   return (

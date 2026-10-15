@@ -4,8 +4,8 @@ import { Users, Map, Layers } from 'lucide-react';
 const FALLBACK = {
   penduduk:      '4.164 Jiwa',
   tahun:         'Data Monografi 2019',
-  luas_hektar:   '±150 Hektar',
   luas_km:       '±1,5 km²',
+  luas_hektar:   '±150 Hektar',
   rt_rw:         '26 RT / 8 RW',
   kecamatan:     'Kecamatan Kendal',
 };
@@ -24,10 +24,9 @@ export default function StatsBar({ infoKelurahan, loading }) {
   /* ── Derive dynamic values, fall back to monograph constants ── */
   const penduduk = infoKelurahan?.total_penduduk     || FALLBACK.penduduk;
   const tahun    = infoKelurahan?.tahun_monografi    || FALLBACK.tahun;
-  const luas     = infoKelurahan?.luas_wilayah       || FALLBACK.luas_hektar;
-  const luasSub  = infoKelurahan?.luas_wilayah
-    ? `Setara ${infoKelurahan.luas_km}`
-    : FALLBACK.luas_km;
+  const luas       = infoKelurahan?.luas_wilayah || FALLBACK.luas_km;
+  const luasHektar = infoKelurahan?.luas_hektar || FALLBACK.luas_hektar;
+  const luasSub    = `Setara ${luasHektar}`;
 
   const rt     = infoKelurahan?.jumlah_rt;
   const rw     = infoKelurahan?.jumlah_rw;

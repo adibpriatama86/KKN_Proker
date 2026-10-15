@@ -233,11 +233,11 @@ export const MOCK_DATA = {
     { key: 'luas_wilayah',      value: '±1,5 km²' },
     { key: 'jumlah_rt',         value: '26' },
     { key: 'jumlah_rw',         value: '8' },
-    // ── MAPS: Geo-coords -6.938749039229245, 110.21389789208276
+    // ── MAPS: confirmed office coords -6.938380231426174, 110.21399258020509
     {
       key: 'maps_embed_url',
       value:
-        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3!2d110.21389789208276!3d-6.938749039229245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTYnMTkuNSJTIDExMMKwMTInNTAuMCJF!5e0!3m2!1sid!2sid!4v1719460000000',
+        'https://www.google.com/maps?q=-6.938380231426174,110.21399258020509&output=embed',
     },
   ],
 };

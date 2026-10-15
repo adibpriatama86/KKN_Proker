@@ -33,6 +33,8 @@ function getInitialSection() {
 
 /* ── Profil Desa placeholder (inline) ──────────────────── */
 function ProfilDesa({ infoKelurahan, loading }) {
+  const namaLurah = infoKelurahan?.nama_lurah?.trim() || 'Belum tersedia';
+  const namaSekretaris = infoKelurahan?.nama_sekretaris_kelurahan?.trim() || 'Belum tersedia';
   const cards = [
     { label: 'Nama Kelurahan',   icon: Building2,  value: infoKelurahan?.nama_kelurahan   || 'Kelurahan Ketapang' },
     { label: 'Kecamatan',        icon: MapPin,      value: infoKelurahan?.kecamatan        || 'Kecamatan Kendal' },
@@ -42,8 +44,8 @@ function ProfilDesa({ infoKelurahan, loading }) {
     { label: 'Luas Wilayah',     icon: Maximize2,   value: infoKelurahan?.luas_wilayah    || '±1,5 km²' },
     { label: 'Jumlah RT',        icon: LayoutGrid,  value: infoKelurahan?.jumlah_rt       || '26' },
     { label: 'Jumlah RW',        icon: Network,     value: infoKelurahan?.jumlah_rw       || '8' },
-    { label: 'Kepala Lurah',     icon: Crown,       value: infoKelurahan?.kepala_lurah    || '—' },
-    { label: 'Sekretaris Lurah', icon: Briefcase,   value: infoKelurahan?.sekretaris_lurah || '—' },
+    { label: 'Lurah',                  icon: Crown,     value: namaLurah },
+    { label: 'Sekretaris Kelurahan', icon: Briefcase, value: namaSekretaris },
   ];
 
   return (
